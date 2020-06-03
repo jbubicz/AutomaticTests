@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "AutomationTest1": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "MSBUILDSINGLELOADCONTEXT": "1"
+      },
+      "nativeDebugging": false
+    }
+  }
+}
