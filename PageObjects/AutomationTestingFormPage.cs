@@ -15,5 +15,10 @@ namespace AutomationTest1.PageObjects
         {
             driver = Hook.driver;
         }
+
+        public void NavigateToForm()
+        {
+            driver.Navigate().GoToUrl("https://blueskycitadel.com/automation-testing-form/");
+        }
     }
 }

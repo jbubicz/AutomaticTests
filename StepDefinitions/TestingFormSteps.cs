@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutomationTest1.PageObjects;
+using System;
 using TechTalk.SpecFlow;
 
 namespace AutomationTest1.StepDefinitions
@@ -6,9 +7,16 @@ namespace AutomationTest1.StepDefinitions
     [Binding]
     public class TestingFormSteps
     {
+        AutomationTestingFormPage automationTestingFormPage;
+        public TestingFormSteps()
+        {
+            automationTestingFormPage = new AutomationTestingFormPage();
+        }
+
         [Given(@"I navigate to the Blue Sky Testing Form")]
         public void GivenINavigateToTheBlueSkyTestingForm()
         {
+            automationTestingFormPage.NavigateToForm();
         }
         
         [When(@"I ener the Single Line Text")]
